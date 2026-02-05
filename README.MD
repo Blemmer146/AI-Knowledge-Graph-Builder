@@ -230,20 +230,8 @@ MIT License - see [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
+- Infosys Springboard for the opportunity to work on this project
 - Based on enterprise knowledge graph patterns
 - spaCy for NER
-- Anthropic Claude for validation design
 - Neo4j graph database platform
 
-## Citation
-
-If you use this project, please cite:
-
-```bibtex
-@misc{codeflow_kg_2025,
-  title={CodeFlow Corp Knowledge Graph Demo},
-  author={Your Name},
-  year={2025},
-  url={https://github.com/YOUR_USERNAME/YOUR_REPO_NAME}
-}
-```
