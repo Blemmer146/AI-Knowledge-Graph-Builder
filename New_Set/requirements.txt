@@ -1,0 +1,35 @@
+# Core dependencies
+pandas>=2.0.0
+numpy>=1.24.0
+pyyaml>=6.0
+
+# Data generation
+faker>=18.0.0
+python-docx>=0.8.11
+pymupdf>=1.23.0
+
+# Neo4j
+neo4j>=5.14.0
+
+# NLP & Entity Extraction
+spacy>=3.7.0
+# Run: python -m spacy download en_core_web_md
+
+# Embeddings & Vector Search
+sentence-transformers>=2.2.2
+faiss-cpu>=1.7.4
+# Note: Use faiss-gpu if you have CUDA GPU
+
+# LLM Integration
+requests>=2.31.0
+
+# Frontend
+streamlit>=1.29.0
+plotly>=5.18.0
+
+# Utilities
+tqdm>=4.66.0
+
+# Optional (for development)
+# jupyter>=1.0.0
+# ipython>=8.12.0

@@ -1,0 +1,167 @@
+# CodeFlow Knowledge Graph Dataset Generation Configuration
+
+# Company Information
+company:
+  name: "CodeFlow"
+  domain: "codeflow.com"
+
+# Entity Counts
+entities:
+  num_employees: 30
+  num_projects: 12
+  num_products: 7
+  num_policies: 5
+  num_regulations: 3
+
+# Departments
+departments:
+  - Engineering
+  - Legal
+  - Operations
+  - Sales
+  - Finance
+
+# Project names pool (will select randomly)
+project_names:
+  - Customer Data Platform Modernization
+  - AWS Infrastructure Migration Phase 2
+  - Identity & Access Management Refresh
+  - GDPR Compliance Readiness
+  - Internal API Consolidation
+  - SOC 2 Evidence Automation
+  - Jira Cloud Adoption
+  - Data Warehouse Migration
+  - Vendor Risk Assessment Program
+  - Salesforce Data Cleanup
+  - Monitoring & Alerting Standardization
+  - Access Review Automation
+  - Project Northstar
+  - Project Foundation
+
+# Product/Vendor Information
+products:
+  - name: Salesforce
+    vendor: Salesforce Inc
+    category: CRM
+  - name: AWS
+    vendor: Amazon Web Services
+    category: Cloud
+  - name: Slack
+    vendor: Slack Technologies
+    category: Communication
+  - name: Jira
+    vendor: Atlassian
+    category: DevTools
+  - name: GitHub Enterprise
+    vendor: GitHub Inc
+    category: DevTools
+  - name: Tableau
+    vendor: Salesforce Inc
+    category: Analytics
+  - name: Okta
+    vendor: Okta Inc
+    category: Security
+
+# Internal Policies
+policies:
+  - name: Data Retention Policy
+    category: Data_Protection
+  - name: Vendor Risk Management
+    category: Vendor_Management
+  - name: Security Controls Framework
+    category: Security
+  - name: Acceptable Use Policy
+    category: Security
+  - name: Third-Party Data Processing
+    category: Data_Protection
+
+# External Regulations
+regulations:
+  - name: GDPR
+    full_name: General Data Protection Regulation
+    type: Regulation
+  - name: ISO27001
+    full_name: ISO/IEC 27001 Information Security Management
+    type: Standard
+  - name: SOC2
+    full_name: SOC 2 Type II Compliance
+    type: Standard
+
+# Project Configuration
+projects:
+  status_distribution:
+    Completed: 0.4
+    Active: 0.5
+    Planned: 0.1
+
+# Employee Configuration
+employees:
+  roles_by_department:
+    Engineering:
+      - Senior Engineer
+      - Engineer
+      - Engineering Manager
+      - Staff Engineer
+      - Technical Lead
+    Legal:
+      - Legal Counsel
+      - Compliance Officer
+      - Privacy Officer
+    Operations:
+      - Operations Manager
+      - Business Analyst
+      - Operations Specialist
+    Sales:
+      - Sales Manager
+      - Account Executive
+      - Sales Engineer
+    Finance:
+      - Financial Analyst
+      - Controller
+      - Finance Manager
+
+  hire_date_range:
+    start: "2018-01-01"
+    end: "2024-12-31"
+
+# Assignment Configuration
+assignments:
+  roles:
+    - Lead Engineer
+    - Engineer
+    - Analyst
+    - Project Manager
+    - Contributor
+    - Technical Lead
+
+  allocation_options:
+    - 25
+    - 50
+    - 75
+    - 100
+
+# Contradiction Configuration
+contradictions:
+  target_percentage: 0.35
+  types:
+    - project_assignment  # Employee on different project
+    - product_mention     # Product not in catalog
+    - policy_reference    # Non-existent policy
+    - shadow_entity       # Informal/unknown entity
+
+# Time Range
+time_range:
+  start: "2020-01"
+  end: "2025-01"
+
+# Data Generation
+generation:
+  random_seed: 42  # For reproducibility
+
+# File Paths
+paths:
+  output_dir: "data"
+  structured_dir: "data/structured"
+  semi_structured_dir: "data/semi_structured"
+  unstructured_dir: "data/unstructured"
+  external_dir: "data/external"
